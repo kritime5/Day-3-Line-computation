@@ -1,4 +1,5 @@
 package com.bridgelab.linecomp;
+import java.lang.Double;
 
 import static java.lang.Math.sqrt;
 import java.util.*;
@@ -25,7 +26,11 @@ public class LineComputation {
         int y4= sc.nextInt();
         double length2 = sqrt((x4 - x3) ^ 2 + (y4 - y3) ^ 2);
         System.out.println("Length of line:"+length2);
-        System.out.println("length1.equals(length2)");
+        System.out.println(Objects.equals(length1, length2));
+        //UC3-COMPARE TWO LENGTH
+        
+            System.out.println(Double.compare(length1,length2));
+        }
 
     }
-}
+
