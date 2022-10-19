@@ -15,9 +15,17 @@ public class LineComputation {
         int y2= sc.nextInt();
 
 
-        double length = sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
-        System.out.println("Length of line:"+length);
-        
+        double length1= sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
+        System.out.println("Length of line:"+length1);
+
+       // UC2-TO CHECK EQUALITY OF TWO LENGTH
+        int x3= sc.nextInt();
+        int x4= sc.nextInt();
+        int y3= sc.nextInt();
+        int y4= sc.nextInt();
+        double length2 = sqrt((x4 - x3) ^ 2 + (y4 - y3) ^ 2);
+        System.out.println("Length of line:"+length2);
+        System.out.println("length1.equals(length2)");
 
     }
 }
